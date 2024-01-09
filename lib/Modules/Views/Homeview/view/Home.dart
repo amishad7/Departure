@@ -10,6 +10,12 @@ class Home_ extends StatelessWidget {
     double w = MediaQuery.sizeOf(context).width;
 
     return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.green,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(23),
+        ),
+      ),
       body: GridView.builder(
         physics: const BouncingScrollPhysics(),
         itemCount: Global.verses.length,
@@ -21,39 +27,45 @@ class Home_ extends StatelessWidget {
           child: Container(
             width: 100,
             height: 200,
-            margin: const EdgeInsets.only(bottom: 10, left: 10, right: 10),
+            margin:
+                const EdgeInsets.only(bottom: 0, left: 5, right: 5, top: 23),
             decoration: BoxDecoration(
-              border: Border.all(
-                color: Colors.white,
-              ),
+              // border: Border.all(
+              //   color: Colors.white,
+              // ),
               color: Colors.green.shade200,
               boxShadow: [
                 BoxShadow(color: Colors.grey.withOpacity(0.2), blurRadius: 23),
               ],
               borderRadius: BorderRadius.circular(23),
             ),
-            child: Column(
+            child: Stack(
               children: [
-                Expanded(
-                  child: Container(
-                    decoration: const BoxDecoration(),
+                Container(
+                  height: 40,
+                  width: 40,
+                  margin: const EdgeInsets.all(10),
+                  alignment: Alignment.center,
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(
+                      10,
+                    ),
+                  ),
+                  child: Text(
+                    "${Global.verses[index]['verse_number']}",
                   ),
                 ),
-                Expanded(
+                Center(
                   child: Container(
-                    child: Stack(
-                      children: [
-                        Padding(
-                          padding: const EdgeInsets.all(8.0),
-                          child: Text(
-                            "${Global.verses[index]['hindi']}",
-                            style: const TextStyle(
-                              color: Colors.white,
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
-                        ),
-                      ],
+                    padding: const EdgeInsets.symmetric(horizontal: 23),
+                    child: Text(
+                      "${Global.verses[index]['hindi']}",
+                      style: const TextStyle(
+                        color: Colors.white,
+                        fontSize: 18,
+                        fontWeight: FontWeight.bold,
+                      ),
                     ),
                   ),
                 ),
