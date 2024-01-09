@@ -1,8 +1,15 @@
+import 'dart:ui';
+
+import 'package:flutter/material.dart';
 import 'package:json_parsing/Modules/utils/introview/Tabs/firstTab.dart';
 import 'package:json_parsing/Modules/utils/introview/Tabs/introduction.dart';
 import 'package:json_parsing/Modules/utils/introview/Tabs/secondTab.dart';
 
 class Global {
+  static TextStyle buttonTextstyle = TextStyle(
+    color: Colors.green,
+  );
+
   static List introtab = [
     const FirstTab(),
     const SecondTab(),
