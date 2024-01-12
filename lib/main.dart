@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:json_parsing/Modules/Views/Homeview/view/Home.dart';
+import 'package:json_parsing/Modules/Views/Homeview/view/Home.da'
+    'rt';
 import 'package:json_parsing/Modules/Views/detailsview/view/detailview.dart';
 import 'package:json_parsing/Modules/utils/introview/Tabs/introduction.dart';
 

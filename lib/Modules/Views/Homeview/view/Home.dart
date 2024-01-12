@@ -10,29 +10,36 @@ class Home_ extends StatelessWidget {
     double w = MediaQuery.sizeOf(context).width;
 
     return Scaffold(
-      // appBar: AppBar(
-      //   backgroundColor: Colors.green,
-      //   shape: RoundedRectangleBorder(
-      //     borderRadius: BorderRadius.circular(23),
-      //   ),
-      // ),
+      appBar: AppBar(
+        backgroundColor: Colors.green,
+        centerTitle: true,
+        toolbarHeight: 70,
+        title: const Text(
+          'Bhagavad gita ',
+          style: TextStyle(color: Colors.white),
+        ),
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(23),
+        ),
+      ),
       body: GridView.builder(
         physics: const BouncingScrollPhysics(),
         itemCount: Global.verses.length,
         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-          crossAxisCount: 2,
-          // childAspectRatio: 300,
+          crossAxisCount: 1,
+          childAspectRatio: 1.4,
+          // mainAxisSpacing: 30,
+          // crossAxisSpacing: 20,
         ),
         itemBuilder: (context, index) => SizedBox(
           child: GestureDetector(
             onTap: () {
-              Navigator.pushNamed(context, 'sub');
+              Navigator.pushNamed(context, 'sub', arguments: index);
             },
             child: Container(
-              width: 100,
-              height: 200,
-              margin:
-                  const EdgeInsets.only(bottom: 0, left: 5, right: 5, top: 23),
+              // width: 100,
+              // height: 800,
+              margin: const EdgeInsets.symmetric(vertical: 18, horizontal: 20),
               decoration: BoxDecoration(
                 // border: Border.all(
                 //   color: Colors.white,
@@ -46,30 +53,50 @@ class Home_ extends StatelessWidget {
               ),
               child: Stack(
                 children: [
-                  Container(
-                    height: 40,
-                    width: 40,
-                    margin: const EdgeInsets.all(10),
-                    alignment: Alignment.center,
-                    decoration: BoxDecoration(
-                      color: Colors.white,
-                      borderRadius: BorderRadius.circular(
-                        10,
+                  Expanded(
+                    child: Container(
+                      child: Row(
+                        children: [
+                          Container(
+                            height: 40,
+                            width: 40,
+                            margin: const EdgeInsets.all(20),
+                            alignment: Alignment.center,
+                            decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius: BorderRadius.circular(
+                                10,
+                              ),
+                            ),
+                            child: Text(
+                              "${Global.verses[index]['id']}",
+                            ),
+                          ),
+                          Text(
+                            "${Global.verses[index]['chapter']}",
+                            style: TextStyle(
+                              color: Colors.green.shade700,
+                              fontSize: 18,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                        ],
                       ),
                     ),
-                    child: Text(
-                      "${Global.verses[index]['verse_number']}",
-                    ),
                   ),
-                  Center(
+                  Expanded(
                     child: Container(
-                      padding: const EdgeInsets.symmetric(horizontal: 23),
-                      child: Text(
-                        "${Global.verses[index]['hindi']}",
-                        style: const TextStyle(
-                          color: Colors.white,
-                          fontSize: 18,
-                          fontWeight: FontWeight.bold,
+                      child: Center(
+                        child: Container(
+                          padding: const EdgeInsets.symmetric(horizontal: 23),
+                          child: Text(
+                            "${Global.verses[index]['hindi']}",
+                            style: const TextStyle(
+                              color: Colors.white,
+                              fontSize: 18,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
                         ),
                       ),
                     ),

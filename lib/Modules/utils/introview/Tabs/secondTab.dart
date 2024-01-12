@@ -9,6 +9,7 @@ class SecondTab extends StatelessWidget {
     return Scaffold(
       body: Container(
         width: double.infinity,
+        height: double.infinity,
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.end,
           children: [
@@ -64,11 +65,12 @@ class SecondTab extends StatelessWidget {
               ),
             ),
             Transform.translate(
-              offset: const Offset(-140, -460),
+              offset: const Offset(-120, -400),
               child: Container(
                 width: 250,
+                height: 180,
                 alignment: Alignment.center,
-                height: 220,
+                // margin: EdgeInsets.only(left: 100),
                 padding: EdgeInsets.only(left: 20),
                 decoration: BoxDecoration(
                   color: Colors.white,
