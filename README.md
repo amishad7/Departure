@@ -26,3 +26,21 @@ themes. Users can switch between light and dark themes based on their preference
 comfortable reading in different lighting conditions.
 Images in Each Verse's Chapters: To enhance the understanding and visual appeal of the
 verses, the app includes relevant images or illustrations for each chapter of the Bhagvat Geeta.
+
+
+
+
+
+
+<img src="https://github.com/amishad7/Departure/assets/118448879/e471873e-f34f-42d8-84ad-e35dd9432871" width="200">
+
+
+
+<img src="https://github.com/amishad7/Departure/assets/118448879/dbc41796-5f55-412c-9fa5-5265c88109de" width="200">
+
+
+<img src="https://github.com/amishad7/Departure/assets/118448879/7c68f192-e3af-4e68-b4fb-0e6541b24b2b" width="200">
+
+
+<img src="" width="200">
+
