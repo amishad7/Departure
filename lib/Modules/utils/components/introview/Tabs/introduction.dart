@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:json_parsing/Modules/utils/introview/Tabs/secondTab.dart';
+import 'package:json_parsing/Modules/utils/components/introview/Tabs/secondTab.dart';
 
 import 'firstTab.dart';
 

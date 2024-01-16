@@ -1,9 +1,9 @@
 class AllData {
-  String id;
-  String chapter;
-  String sanskrit;
-  String gujarati;
-  String hindi;
+  var id;
+  var chapter;
+  var sanskrit;
+  var gujarati;
+  var hindi;
 
   AllData({
     required this.id,
@@ -21,3 +21,4 @@ class AllData {
         hindi: data['hindi'],
         sanskrit: data['sanskrit']);
   }
+}
