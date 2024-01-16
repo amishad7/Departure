@@ -47,8 +47,10 @@ languages, enabling users to read and study the Bhagvat Geeta in their
 <img src="https://github.com/amishad7/Departure/assets/118448879/dbc41796-5f55-412c-9fa5-5265c88109de" width="250">
 
 
-<img src="https://github.com/amishad7/Departure/assets/118448879/7c68f192-e3af-4e68-b4fb-0e6541b24b2b" width="250">
 
 
-<img src="https://github.com/amishad7/Departure/assets/118448879/d938560e-99c6-4a00-a7e8-47d1fbb40a6e" width="250">
+<img src="https://github.com/amishad7/Departure/assets/118448879/ead9433c-a37c-4539-b018-ab31738125b5" width="250">
+
+<img src="https://github.com/amishad7/Departure/assets/118448879/ad097a11-61e4-4de2-8868-6c45a00fdc80" width="250">
+
 
